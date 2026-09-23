@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADSYTECHNOLOGIESCOM — Power Your Game</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#03050b;color:#f7f8ff;font-family:Arial,Helvetica,sans-serif}
+:root{--blue:#1689ff;--violet:#8b2cff;--line:#18243b;--muted:#9eabd0}
+header{height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid #172036;background:#05070d;position:sticky;top:0;z-index:20}
+.brand{font-size:24px;font-weight:950;letter-spacing:-1px}.brand b{color:var(--blue)}.brand small{display:block;font-size:7px;letter-spacing:5px;color:#9fb2df;margin-top:4px}
+nav{display:flex;gap:28px;align-items:center;font-size:12px;font-weight:800}nav a{color:#fff;text-decoration:none}.cart{border:1px solid var(--violet);padding:13px 18px;border-radius:6px;box-shadow:0 0 20px #6522aa55}
+.hero{min-height:445px;display:grid;grid-template-columns:42% 58%;overflow:hidden;background:radial-gradient(circle at 20% 40%,#101a3a 0,#03050b 48%)}
+.copy{padding:70px 3vw 55px 6vw;z-index:2}.eyebrow{color:#9148ff;letter-spacing:7px;font-weight:900;font-size:12px}.copy h1{font-size:62px;line-height:.92;margin:18px 0;font-style:italic;letter-spacing:-2px}.copy h1 em{font-style:italic;background:linear-gradient(90deg,#1592ff,#a02cff);-webkit-background-clip:text;color:transparent}
+.copy p{color:#b7c4e7;line-height:1.55;max-width:450px;font-size:17px}.btn{display:inline-block;margin-top:16px;background:linear-gradient(90deg,#0e8cff,#922dff);padding:15px 24px;border-radius:5px;color:#fff;text-decoration:none;font-weight:900;font-size:12px}
+.visual{position:relative;min-height:445px}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#03050b 0%,transparent 25%)}.visual img{width:100%;height:100%;object-fit:cover;object-position:center}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);padding:22px 6vw;background:#07101f;border-top:1px solid #162848;border-bottom:1px solid #162848}.benefit{padding:5px 25px;border-right:1px solid #22334e}.benefit:last-child{border:0}.benefit b{font-size:11px}.benefit span{display:block;color:#8da1ca;font-size:9px;margin-top:6px}
+.shop{padding:52px 5.5vw 70px}.kicker{color:#8d39ff;letter-spacing:5px;font-size:10px;font-weight:900}.title{font-size:38px;margin:8px 0 28px}.title em{font-style:normal;color:#188dff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #17253c;border-radius:9px;overflow:hidden;background:linear-gradient(180deg,#09101d,#05080f);transition:.25s}.card:hover{transform:translateY(-5px);border-color:#315b9d}.pic{height:220px;position:relative;background:#090d17}.pic img{width:100%;height:100%;object-fit:cover}.tag{position:absolute;left:12px;top:12px;background:#8d24ff;padding:5px 9px;border-radius:4px;font-size:9px;font-weight:900}
+.info{padding:16px}.info h3{margin:0 0 7px;font-size:15px}.cat{color:#8798bf;font-size:10px}.row{display:flex;align-items:center;justify-content:space-between;margin-top:14px}.price{font-size:19px;font-weight:950}.add{background:transparent;color:#fff;border:1px solid #235fbb;border-radius:5px;padding:9px 12px;font-weight:900;cursor:pointer}.add:hover{background:#147df5}
+footer{padding:30px 6vw;border-top:1px solid #172036;color:#7f8baa;font-size:10px;display:flex;justify-content:space-between}
+@media(max-width:850px){nav a{display:none}.hero{grid-template-columns:1fr}.copy{padding:55px 7vw}.copy h1{font-size:48px}.visual{height:330px}.benefits{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.brand{font-size:17px}.hero .copy h1{font-size:41px}.grid{grid-template-columns:1fr}.benefits{grid-template-columns:1fr}.benefit{border-right:0;border-bottom:1px solid #22334e}.shop{padding-left:5vw;padding-right:5vw}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">ADSY<b>TECHNOLOGIESCOM</b><small>POWER YOUR GAME.</small></div>
+ <nav><a href="#">Home</a><a href="#shop">Shop</a><a href="#shop">Gaming PCs</a><a href="#shop">Accessories</a><a href="#shop">Monitors</a><div class="cart">CART <span id="count">0</span></div></nav>
+</header>
+<section class="hero">
+ <div class="copy"><div class="eyebrow">NEXT GENERATION GAMING</div><h1>POWER<br>YOUR <em>GAME.</em></h1><p>High-performance gear, powerful setups and next-level gaming experiences.</p><a class="btn" href="#shop">SHOP NOW →</a></div>
+ <div class="visual"><img src="hero.jpg" alt="ADSY gaming setup"></div>
+</section>
+<section class="benefits">
+ <div class="benefit"><b>🚚 WORLDWIDE SHIPPING</b><span>Fast & reliable delivery</span></div>
+ <div class="benefit"><b>🛡 SECURE PAYMENT</b><span>Protected checkout experience</span></div>
+ <div class="benefit"><b>🎧 24/7 SUPPORT</b><span>We're here for you</span></div>
+ <div class="benefit"><b>💎 PREMIUM QUALITY</b><span>Built for gamers</span></div>
+</section>
+<main class="shop" id="shop">
+ <div class="kicker">FEATURED PRODUCTS</div><h2 class="title">BEST <em>SELLERS.</em></h2>
+ <div class="grid">
+  <article class="card"><div class="pic"><span class="tag">NEW</span><img src="product1.jpg" alt="Gaming PC"></div><div class="info"><div class="cat">GAMING PCs</div><h3>ADSY Pro Gaming PC</h3><div class="row"><span class="price">$1,299.99</span><button class="add" onclick="add(this)">ADD +</button></div></div></article>
+  <article class="card"><div class="pic"><span class="tag">NEW</span><img src="product2.jpg" alt="Gaming keyboard"></div><div class="info"><div class="cat">KEYBOARDS</div><h3>ADSY Mechanical Keyboard</h3><div class="row"><span class="price">$129.99</span><button class="add" onclick="add(this)">ADD +</button></div></div></article>
+  <article class="card"><div class="pic"><span class="tag">NEW</span><img src="product3.jpg" alt="Gaming mouse"></div><div class="info"><div class="cat">MICE</div><h3>ADSY Elite Gaming Mouse</h3><div class="row"><span class="price">$79.99</span><button class="add" onclick="add(this)">ADD +</button></div></div></article>
+  <article class="card"><div class="pic"><span class="tag">NEW</span><img src="product4.jpg" alt="Gaming headset"></div><div class="info"><div class="cat">HEADSETS</div><h3>ADSY Pro Headset</h3><div class="row"><span class="price">$149.99</span><button class="add" onclick="add(this)">ADD +</button></div></div></article>
+  <article class="card"><div class="pic"><span class="tag">NEW</span><img src="product5.jpg" alt="Gaming monitor"></div><div class="info"><div class="cat">MONITORS</div><h3>ADSY 27” Gaming Monitor</h3><div class="row"><span class="price">$299.99</span><button class="add" onclick="add(this)">ADD +</button></div></div></article>
+  <article class="card"><div class="pic"><span class="tag">NEW</span><img src="product6.jpg" alt="Wireless controller"></div><div class="info"><div class="cat">CONTROLLERS</div><h3>ADSY Wireless Controller</h3><div class="row"><span class="price">$69.99</span><button class="add" onclick="add(this)">ADD +</button></div></div></article>
+ </div>
+</main>
+<footer><b>ADSYTECHNOLOGIESCOM</b><span>POWER YOUR GAME. © 2026</span></footer>
+<script>
+let n=0;
+function add(b){n++;document.getElementById('count').textContent=n;b.textContent='✓ ADDED';setTimeout(()=>b.textContent='ADD +',900)}
+</script>
+</body></html>
